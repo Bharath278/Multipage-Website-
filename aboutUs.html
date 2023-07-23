@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><!--recognizable characters-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--to make it responsive-->
+    <!--width is being set to the device width in which the website is seen and initial scale states
+    by how much the website should be zoomed-->
+    <title>JNTU Hyderabad</title><!--Tab title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"><!--linking style sheet-->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo of JNTUH"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contactUs.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!-- About JNTUH section-->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>India's Biggest University</h1>
+          <p>Jawaharlal Nehru Technological University, Hyderabad was established on 
+            2nd October 1972 by the ACT of State Legislature of Andhra Pradesh No.16,
+             as the first ever Technological University in the country. 
+            It has been in the forefront during the last forty-nine years (1972-2021) in providing 
+            quality technical education of relevance in the State and celebrating
+             Golden Jubilee Year (2021-2022).</p>
+             <br>
+            <p> 	
+              Vision :
+              To provide for the advancement of learning and knowledge in Engineering & Technology, 
+              Physical and Social Sciences by teaching, research and experimentation or
+               practical training or by such other means as the University may deem fit.</p>
+            <p>
+              Mission:
+              To provide the form of education that allows students to spend periods of intramural 
+              work so that upon graduation not only do they possess a range of academic learning, 
+              but also learn and acquire knowledge for the benefit of the state in particular and the country in general.
+              
+              RoadMap:</p>
+          <a href="course.html" class="hero-btn red-btn">Explore Now!</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpeg" alt="team-of-people-in-conference">
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>NAAC A++</p>
+      <p>nirf rank 82</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!-- JS for menu toggle -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        console.log("menu clicked!");
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        console.log("close clicked!");
+        navLinks.style.right ="-200px";
+      }
+    </script>
+  </body>
+</html>
